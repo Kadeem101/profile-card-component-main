@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button {
+  font: inherit;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  background-color: hsl(185deg, 75%, 39%);
+  display: grid;
+  place-items: center;
+  background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+  background-size: 46.875rem, 46.875rem;
+  background-position: -33.75rem -23.4375rem, 150px 375px;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.card {
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  width: 18rem;
+  background-color: white;
+}
+.card__bg-image {
+  height: 8.5rem;
+  background-image: url("images/bg-pattern-card.svg");
+  background-size: contain;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.card__pp {
+  border-radius: 100%;
+  border: 5px solid white;
+  position: absolute;
+  top: 60%;
+}
+.card__bottom {
+  margin-top: 4rem;
+}
+.card__name, .card__count {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: hsl(229deg, 23%, 23%);
+}
+.card__age, .card__city, .card__count__label {
+  color: hsl(0deg, 0%, 59%);
+}
+.card__name-age {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.card__city {
+  font-size: 0.8rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+.card__count__label {
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+}
+.card__stats {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  border-top: 1px solid hsla(227deg, 10%, 46%, 0.292);
+}
+
+@media (min-width: 375px) {
+  body {
+    background-size: 1000px, 1000px;
+    background-position: -250px -510px, 650px 400px;
+  }
+}/*# sourceMappingURL=main.css.map */

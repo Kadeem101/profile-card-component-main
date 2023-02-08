@@ -1,0 +1,79 @@
+body{
+  font-family: $font-family;
+  font-weight: $font-weight-regular;
+  background-color: $primary-dark-cyanDark;
+  display: grid;
+  place-items: center;
+  background-image: url("images/bg-pattern-top.svg") , url("images/bg-pattern-bottom.svg");
+  background-size: 46.875rem , 46.875rem;
+  background-position: -33.75rem -23.4375rem, 150px 375px;
+  background-repeat: no-repeat , no-repeat;
+}
+
+.card{
+  border-radius: .5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  width: 18rem;
+  background-color: white;
+
+  &__bg-image{
+    height: 8.5rem;
+    background-image: url('images/bg-pattern-card.svg');
+    background-size: contain;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-radius: .5rem .5rem 0 0;
+  }
+
+  &__pp{
+    border-radius: 100%;
+    border: 5px solid white;
+    position: absolute;
+    top: 60%;
+  }
+
+  &__bottom{
+    margin-top: 4rem;
+  }
+
+  &__name ,
+  &__count{
+    font-size: $font-size-name_stats;
+    font-weight: $font-weight-bold;
+    color: $primary-very-dark-desaturated-blue;
+  }
+
+  &__age ,
+  &__city ,
+  &__count__label{
+    color: $neutral-dark-gray;
+
+  }
+
+  &__name-age{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: .5rem;
+  }
+
+  &__city{
+    font-size: .8rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  &__count__label{
+    font-size: .7rem;
+    ;letter-spacing: 1px;
+  }
+
+  &__stats{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    border-top: 1px solid hsla(227, 10%, 46%, 0.292);
+  }
+}
